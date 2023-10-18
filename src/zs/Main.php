@@ -17,10 +17,10 @@ class Main extends PluginBase {
         if ($command->getName() === "getip") {
             $url = "https://ipinfo.io/ip";
 
-            $content = @file_get_contents($url);
+            $content = file_get_contents($url);
 
             if ($content !== false) {
-                $sender->sendMessage("Server IP: " . substr($content, 0, 10));
+                $sender->sendMessage("Server IP: " . substr($content, 0, 20));
             } else {
                 $sender->sendMessage("Failed to open $url");
             }
