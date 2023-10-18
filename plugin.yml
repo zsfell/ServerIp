@@ -1,0 +1,14 @@
+name: ServerIP
+main: zs\Main
+version: 1.0.0
+api: 5.0.0
+author: zsfell
+commands:
+  getip:
+    description: "Get the Server IP"
+    permission: get.ip
+permissions:
+  get.ip:
+    description: ""
+    default: true
+
