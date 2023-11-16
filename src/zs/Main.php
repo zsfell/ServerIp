@@ -15,7 +15,7 @@ class Main extends PluginBase {
 
     public function onCommand(CommandSender $sender, Command $command, string $label, array $args): bool {
         if ($command->getName() === "getip") {
-            $url = "https://ipinfo.io/ip";
+            $url = "https://api.ipify.org";
 
             $content = file_get_contents($url);
 
